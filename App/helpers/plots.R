@@ -1,5 +1,4 @@
 library('ggplot2')
-library('micromapST')
 library('lattice')
 library('hexbin')
 library('corrplot')

@@ -7,6 +7,8 @@
 
 library(shiny)
 library(gridExtra)
+library(tidyverse)
+library(hexbin)
 source("App/plots/plotbox.R")
 source("App/plots/plotcorr.R")
 source("App/plots/plotscatter.R")
