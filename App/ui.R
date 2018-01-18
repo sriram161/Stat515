@@ -8,10 +8,12 @@ library(shiny)
 library(gridExtra)
 source("App/helpers/labels.R")
 source("App/pages/pages.R")
+source("App/pages/boxplots.R")
+source("App/pages/correlations.R")
+source("App/pages/scatters.R")
 
 myUI <- navbarPage("USA Energy dashboard",
-  tabPanel("BOX_PLOT", boxplot.page1()),
-  tabPanel("CORRELATION_PLOT", corplot.page2()),
-  tabPanel("SCATTER_FACET", scatterplot.page3()), 
-  collapsible = TRUE) 
-
+  tabPanel("BOX_PLOT", box.plot1()),
+  tabPanel("CORRELATION_PLOT", corr.plot1()),
+  tabPanel("SCATTER_FACET", scatter.plot1()), 
+  collapsible = TRUE)
