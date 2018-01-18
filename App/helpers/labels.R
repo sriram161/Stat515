@@ -7,7 +7,10 @@ labels.renew <- paste(c('Ethonal', 'Geo Therm', 'Hydro', 'Solar', 'Wind', 'Wood'
 #page1 labels
 codes.fossil <- c('Coal'='CLTCB', 'Natural Gas'='NNTCB', 'Petroleum'='PMTCB', 'Fossil Fuel'='FFTCB')
 codes.renew <- c('Ethonal'='EMTCB', 'Geo Thermal'='GETCB', 'Hydro'='HYTCB', 'Solar'='SOTCB', 'Wind'='WYTCB', 'Wood Waste'='WWTCB', 'Renewable'='RETCB')
+codes.rfossil <- c('CLTCB'='Coal' , 'NNTCB'='Natural Gas', 'PMTCB'='Petroleum', 'FFTCB'='Fossil Fuel')
+codes.rrenew <- c('EMTCB'='Ethonal', 'GETCB'='Geo Thermal', 'HYTCB'='Hydro', 'SOTCB'='Solar', 'WYTCB'='Wind', 'WWTCB'='Wood Waste', 'RETCB'='Renewable')
 codes.all <- c(codes.fossil, codes.renew)
+codes.rall <- c(codes.rfossil, codes.rrenew)
 
 # page2 labes
 codes.energy.source <- c('Fossil Fuel'='FFTCB', 'Renewable'='RETCB')

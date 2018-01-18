@@ -7,9 +7,9 @@ fossil <- data.energy.fossil()
 renew.fossil.data <- inner_join(renew, fossil, by=c("StateCode", "Year","decade"))
 
 
-scatter.plot <- function(x='RETCB' , y='FFTCB') {
+scatter.plot <- function(x, y) {
   return(ggplot(renew.fossil.data, aes(x=eval(parse(text = x)), y=eval(parse(text = y)))) + 
            geom_point(aes(color=factor(StateCode))) +
            geom_smooth(method = 'lm') + facet_wrap(~decade, ncol=2) + 
-           labs(title = "USA Energy consumption dynamics per decade per states"))
+           labs(x=codes.rall[x],y=codes.rall[y], title = "USA Energy consumption dynamics per decade per states"))
 }

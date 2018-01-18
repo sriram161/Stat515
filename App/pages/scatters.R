@@ -7,8 +7,8 @@ scatter.plot1 <- function(){
     titlePanel("USA EIA Energy state data 1960-2015."),
     sidebarLayout(
       sidebarPanel(
-        selectInput('xAxis', label= "Select decade", choices = codes.all, selected="FFTCB"),
-        selectInput('yAxis', label= "Select source fuel", choices = codes.all, selected="RETCB")
+        selectInput('xAxis', label= "Select dependent Fuel", choices = codes.all, selected="FFTCB"),
+        selectInput('yAxis', label= "Select impacted Fuel", choices = codes.all, selected="RETCB")
       ),
       mainPanel(plotOutput('scatterPlot'))
     )))
