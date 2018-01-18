@@ -7,7 +7,6 @@
 library(shiny)
 library(gridExtra)
 source("App/helpers/labels.R")
-source("App/pages/pages.R")
 source("App/pages/boxplots.R")
 source("App/pages/correlations.R")
 source("App/pages/scatters.R")
