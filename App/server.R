@@ -7,7 +7,9 @@
 
 library(shiny)
 library(gridExtra)
-source('App/exploration.R')
+source("App/plots/plotbox.R")
+source("App/plots/plotcorr.R")
+source("App/plots/plotscatter.R")
 
 myServer <- function(input, output) {
   output$boxPlot <- renderPlot(
