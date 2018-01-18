@@ -13,7 +13,7 @@ source("App/plots/plotscatter.R")
 
 myServer <- function(input, output) {
   output$boxPlot <- renderPlot(
-    grid.arrange(fossil.plot(input$fuelType1), renew.plot(input$fuelType2), nrow=2))
+    grid.arrange(fossil.box(input$fuelType1), renew.box(input$fuelType2), nrow=2))
   output$corPlot <- renderPlot(
     cor.plot(input$idecade, input$isource, input$ifeatures))
   output$scatterPlot <- renderPlot(
