@@ -23,3 +23,8 @@ buildLabels <- function(encoding, description){
   return(df)
 }
 
+# stats list
+codes.stats <- c( 'Mean'='mean', 'Standard deviation'='sd', 'Minimum'='min', 'Maximum'='max', 'Median'='median',
+                  'Variance'='var')
+
+codes.new <- c('Coal'='CLTCB', 'Natural Gas'='NNTCB', 'Petroleum'='PMTCB','Ethonal'='EMTCB', 'Geo Thermal'='GETCB', 'Hydro'='HYTCB', 'Solar'='SOTCB', 'Wind'='WYTCB', 'Wood Waste'='WWTCB')

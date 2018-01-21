@@ -12,6 +12,7 @@ library(hexbin)
 source("App/plots/plotbox.R")
 source("App/plots/plotcorr.R")
 source("App/plots/plotscatter.R")
+source("App/plots/plotleaflet.R")
 
 myServer <- function(input, output) {
   output$boxPlot <- renderPlot(
@@ -20,4 +21,6 @@ myServer <- function(input, output) {
     cor.plot(input$idecade, input$isource, input$ifeatures))
   output$scatterPlot <- renderPlot(
     scatter.plot(x=input$xAxis, y=input$yAxis))
+  output$CoroplethPlot <- renderPlot(
+    coropleth.plot(colname=input$Fuel, funct=input$Stat, bins=input$Bins))
 }
